@@ -1,0 +1,20 @@
+CRON JOBS
+
+
+
+Delete expired Verify Codes
+deletetime
+
+
+Delete expired Session
+deletetime
+
+
+archive expired push_timeline
+archive expired push_profile
+archive expired timeline
+
+delete backups where multiple are found keep recent date
+
+archive gps data older than 120 minutes
+
