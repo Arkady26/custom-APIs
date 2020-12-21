@@ -13,7 +13,6 @@ parameter [q] JSON data only
 
 
 require_once("SimpleRest.php");
-
 unset ($_REQUEST);
 unset ($_GET);$view="reject";
 //unset $_SERVER;
@@ -213,7 +212,7 @@ $function_output["status"]=404;break;
 		} else {
 			$statusCode = 200;
 		}
-
+var_dump(jsonwrapper($function_output,$function_output));die;
 		setHttpHeaders('application/json', $statusCode);
 			echo jsonwrapper($function_output,$function_output);    
 			//server response //

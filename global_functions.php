@@ -23,7 +23,8 @@ jsonwrapper()
 */
 //////////////////////////////////////////////////////////////////
 
-
+error_reporting(2);
+ini_set('display_errors','on');
 
 function leave($error=false)
 {
@@ -51,9 +52,9 @@ function conn()
 {
 	
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$username = "root";
+$password = "";
+$dbname = "flapi";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
